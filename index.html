@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090817">
+  <title>AI PINTAR BY KENZ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <main class="app">
+    <header class="topbar">
+      <div class="brand-icon">K</div>
+      <div>
+        <h1>KENZ <span>AI</span></h1>
+        <p>SMART LEARNING ASSISTANT</p>
+      </div>
+      <div class="status"><span></span> AI ONLINE</div>
+    </header>
+
+    <section class="hero">
+      <div class="ai-orb">
+        <div class="orb-core">K</div>
+      </div>
+      <p class="eyebrow">YOUR PERSONAL AI</p>
+      <h2>Halo, <span id="greeting">Teman!</span></h2>
+      <p class="hero-desc">
+        Belajar lebih mudah bersama AI Pintar by Kenz.
+        Tanya materi, bahas soal, dan periksa latihanmu.
+      </p>
+    </section>
+
+    <section class="profile panel">
+      <h3>✦ Profil Belajar</h3>
+      <div class="profile-fields">
+        <label>
+          Nama
+          <input id="studentName" maxlength="40"
+            placeholder="Masukkan nama kamu">
+        </label>
+        <label>
+          Kelas
+          <input id="studentClass" maxlength="30"
+            placeholder="Contoh: 7A">
+        </label>
+      </div>
+      <button id="saveProfile" class="secondary-btn">
+        Simpan profil
+      </button>
+    </section>
+
+    <section class="quick-actions">
+      <button class="quick-card" data-prompt="Jelaskan materi matematika dasar dengan contoh yang mudah dipahami.">
+        <span class="quick-icon">∑</span>
+        <strong>Belajar Materi</strong>
+        <small>Pahami pelajaran</small>
+      </button>
+
+      <button class="quick-card" data-prompt="Buatkan 5 soal latihan matematika beserta kunci jawaban dan pembahasannya.">
+        <span class="quick-icon">✎</span>
+        <strong>Soal Latihan</strong>
+        <small>Berlatih bersama AI</small>
+      </button>
+
+      <button class="quick-card" data-prompt="Jelaskan cara memeriksa jawaban soal latihan dan tunjukkan contoh pembahasannya.">
+        <span class="quick-icon">✓</span>
+        <strong>Periksa Jawaban</strong>
+        <small>Pelajari kesalahan</small>
+      </button>
+    </section>
+
+    <section class="chat panel">
+      <div class="chat-heading">
+        <div class="mini-orb">K</div>
+        <div>
+          <h3>AI Pintar by Kenz</h3>
+          <p>Teman belajar kamu</p>
+        </div>
+      </div>
+
+      <div id="chatMessages" class="messages" aria-live="polite">
+        <div class="message ai-message">
+          Halo bro! 👋 Gue AI Pintar by Kenz.
+          Mau belajar apa hari ini?
+        </div>
+      </div>
+
+      <div id="loading" class="loading" hidden>
+        AI sedang berpikir<span>...</span>
+      </div>
+
+      <form id="chatForm" class="chat-form">
+        <textarea id="question" rows="2" maxlength="6000"
+          placeholder="Tulis pertanyaan atau soal latihan..."
+          required></textarea>
+        <button id="sendButton" type="submit" aria-label="Kirim">
+          ➤
+        </button>
+      </form>
+      <p class="disclaimer">
+        Periksa kembali jawaban AI. Gunakan untuk belajar dan latihan.
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 TOOLS BY KENZ</p>
+      <p>Built for learning ✦ Powered by Gemini</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+    </html>
